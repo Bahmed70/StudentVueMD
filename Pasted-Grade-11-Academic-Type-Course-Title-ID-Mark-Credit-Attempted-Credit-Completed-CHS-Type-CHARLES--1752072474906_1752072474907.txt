@@ -1,0 +1,144 @@
+Grade: 11
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+CHARLES HERBERT FLOWERS HIGH Year: 2025 Term: S2
+Health 2 (744240)	A	0.50	0.50	High School
+CHARLES HERBERT FLOWERS HIGH Year: 2025 Term: S1
+Fin Liter for Teens (682700)	A	0.50	0.50	High School
+CHARLES HERBERT FLOWERS HIGH Year: 2025 Term: FY
+Adv Place Engl Lang (105193)	B	1.00	1.00	High School
+AP Precalculus (375213)	C	1.00	1.00	High School
+Electronics Systems (836103)	B	1.00	1.00	High School
+Intro Comp Prog (390023)	B	1.00	1.00	High School
+IT Networks&Systems1 (867213)	A	1.00	1.00	High School
+Physics S/T (440393)	B	1.00	1.00	High School
+World History (261193)	B	1.00	1.00	High School
+PRINCE GEORGES COMMUNITY COLLEGE Year: 2025 Term: S1
+Understanding Operating System (INT1700) (886583)	B	1.00	1.00	High School
+PRINCE GEORGES COMMUNITY COLLEGE Year: 2024 Term: SS
+Intro to Information Tech (INT1010) (864333)	A	1.00	1.00	High School
+Grade: 10
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+CHARLES HERBERT FLOWERS HIGH Year: 2024 Term: S2
+Engineer Graphic S/T (811400)	B	0.50	0.50	High School
+CHARLES HERBERT FLOWERS HIGH Year: 2024 Term: S1
+Architec Graphic S/T (811200)	B	0.50	0.50	High School
+CHARLES HERBERT FLOWERS HIGH Year: 2024 Term: FY
+Adv Place Am Gov/Pol (250503)	B	1.00	1.00	High School
+Algebra 2 (362403)	B	1.00	1.00	High School
+AP Computer Sci Prin (867363)	C	1.00	1.00	High School
+Chemistry S/T (430393)	B	1.00	1.00	High School
+Computer Graphics 1 (619903)	A	1.00	1.00	High School
+Engineering Found ST (870923)	B	1.00	1.00	High School
+Engl/Lang Art 10 (104193)	B	1.00	1.00	High School
+Grade: 09
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+CHARLES HERBERT FLOWERS HIGH Year: 2023 Term: S2
+Personal Fitness (718010)	A	0.50	0.50	High School
+CHARLES HERBERT FLOWERS HIGH Year: 2023 Term: S1
+Health 1 (744230)	A	0.50	0.50	High School
+CHARLES HERBERT FLOWERS HIGH Year: 2023 Term: FY
+Art 1 (602103)	B	1.00	1.00	High School
+Biology S/T (420793)	C	1.00	1.00	High School
+English/Lang Art 9 (103293)	B	1.00	1.00	High School
+Found of Tech S/T (842093)	B	1.00	1.00	High School
+Geometry S/T (344013)	A	1.00	1.00	High School
+Spanish 3 (166003)	B	1.00	1.00	High School
+United States Histor (262293)	A	1.00	1.00	High School
+Grade: 08
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+KETTERING MIDDLE Year: 2022 Term: S2
+CompSciDiscoveries (867312)	B	0.50	0.50	Middle School
+Physical Education 8 (721802)	A	0.50	0.50	Middle School
+KETTERING MIDDLE Year: 2022 Term: S1
+Health Education 8 (712801)	A	0.50	0.50	Middle School
+Music 8 - Semester (600801)	A	0.50	0.50	Middle School
+KETTERING MIDDLE Year: 2022 Term: FY
+Algebra 1 (323503)	A	1.00	1.00	High School
+Rdg Eng Lang Art 8 H (131493)	A	1.00	1.00	Middle School
+Science 8 (417803)	B	1.00	1.00	Middle School
+Spanish 2 (165003)	C	1.00	1.00	High School
+United States His 8 (209993)	B	1.00	1.00	Middle School
+Grade: 07
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+KETTERING MIDDLE Year: 2021 Term: S2
+Drama 7 - Semester (128702)	A	0.50	0.50	Middle School
+Physical Education 7 (721702)	A	0.50	0.50	Middle School
+KETTERING MIDDLE Year: 2021 Term: S1
+Health Education 7 (712701)	A	0.50	0.50	Middle School
+Music 7 - Semester (600701)	A	0.50	0.50	Middle School
+KETTERING MIDDLE Year: 2021 Term: FY
+Accelerated Math 2 (308793)	A	1.00	1.00	Middle School
+Rdg Eng Lang Art 7 H (131393)	A	1.00	1.00	Middle School
+Science 7 (417703)	B	1.00	1.00	Middle School
+Spanish 1 (162003)	B	1.00	1.00	High School
+World Cultur/Geog 2H (208993)	A	1.00	1.00	Middle School
+Grade: 06
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+KETTERING MIDDLE Year: 2020 Term: S2
+Music 6 - Semester (600602)	A*	0.50	0.50	Middle School
+Physical Education 6 (721602)	B*	0.50	0.50	Middle School
+KETTERING MIDDLE Year: 2020 Term: S1
+Health Education 6 (712601)	A	0.50	0.50	Middle School
+Technology Concepts (760001)	B	0.50	0.50	Middle School
+KETTERING MIDDLE Year: 2020 Term: FY
+Accelerated Math 1 (308693)	B*	1.00	1.00	Middle School
+Introduct to Spanish (161103)	B*	1.00	1.00	Middle School
+Rdg Eng Lang Art 6 H (131293)	A*	1.00	1.00	Middle School
+Science 6 (410603)	A*	1.00	1.00	Middle School
+World Cultur/Geog 1H (208893)	A*	1.00	1.00	Middle School
+Grade: 05
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+KETTERING ELEMENTARY Year: 2019 Term: FY
+Art 5 (60500)	B	0.50	0.50	Elementary School
+Health 5 (74500)	B	0.50	0.50	Elementary School
+Math 5 (30500)	A	1.00	1.00	Elementary School
+Music 5 (62500)	A	0.50	0.50	Elementary School
+Oral & Written Com 5 (12500)	B	1.00	1.00	Elementary School
+Physical Educ 5 (71500)	B	0.50	0.50	Elementary School
+Reading 5 (13500)	B	1.00	1.00	Elementary School
+Science 5 (40500)	B	1.00	1.00	Elementary School
+Soc Studies 5 (20500)	B	1.00	1.00	Elementary School
+Social Skills 5 (92500)	B	0.00	0.00	Elementary School
+Work Habits 5 (90500)	A	0.00	0.00	Elementary School
+Grade: 04
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+KETTERING ELEMENTARY Year: 2018 Term: FY
+Art 4 (60400)	A	0.50	0.50	Elementary School
+Health 4 (74400)	A	0.50	0.50	Elementary School
+Math 4 (30400)	B	1.00	1.00	Elementary School
+Music 4 (62400)	B	0.50	0.50	Elementary School
+Oral & Written Com 4 (12400)	B	1.00	1.00	Elementary School
+Physical Educ 4 (71400)	B	0.50	0.50	Elementary School
+Reading 4 (13400)	B	1.00	1.00	Elementary School
+Science 4 (40400)	A	1.00	1.00	Elementary School
+Soc Studies 4 (20400)	A	1.00	1.00	Elementary School
+Social Skills 4 (92400)	B	0.00	0.00	Elementary School
+Work Habits 4 (90400)	A	0.00	0.00	Elementary School
+Grade: 03
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+KETTERING ELEMENTARY Year: 2017 Term: FY
+Art 3 (60300)	A	0.50	0.50	Elementary School
+Health 3 (74300)	B	0.50	0.50	Elementary School
+Math 3 (30300)	A	1.00	1.00	Elementary School
+Music 3 (62300)	B	0.50	0.50	Elementary School
+Oral & Written Com 3 (12300)	B	1.00	1.00	Elementary School
+Physical Educ 3 (71300)	A	0.50	0.50	Elementary School
+Reading 3 (13300)	B	1.00	1.00	Elementary School
+Science 3 (40300)	C	1.00	1.00	Elementary School
+Soc Studies 3 (20300)	B	1.00	1.00	Elementary School
+Social Skills 3 (92300)	B	0.00	0.00	Elementary School
+Work Habits 3 (90300)	B	0.00	0.00	Elementary School
+Grade: 02
+(Academic Type) Course Title (ID)	Mark	Credit Attempted	Credit Completed	CHS Type
+KETTERING ELEMENTARY Year: 2016 Term: FY
+Art 2 (60200)	A	0.50	0.50	Elementary School
+Health 2 (74200)	A	0.50	0.50	Elementary School
+Math 2 (30200)	B	1.00	1.00	Elementary School
+Music 2 (62200)	A	0.50	0.50	Elementary School
+Oral & Written Com 2 (12200)	B	1.00	1.00	Elementary School
+Physical Educ 2 (71200)	B	0.50	0.50	Elementary School
+Reading 2 (13200)	A	1.00	1.00	Elementary School
+Science 2 (40200)	B	1.00	1.00	Elementary School
+Soc Studies 2 (20200)	A	1.00	1.00	Elementary School
+Social Skills 2 (92200)	B	0.00	0.00	Elementary School
+Work Habits 2 (90200)	A	0.00	0.00	Elementary School

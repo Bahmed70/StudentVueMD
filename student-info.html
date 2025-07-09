@@ -1,0 +1,302 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Information - StudentVUE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .top-right {
+      text-align: right;
+    }
+
+    .top-right small {
+      color: gray;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #4a4a4a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 10px;
+    }
+
+    button:hover {
+      background-color: #333;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+      border: 2px solid #007bff;
+    }
+
+    .pgcps-logo {
+      height: 40px;
+    }
+
+    .container {
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      background-color: #4a4a4a;
+      color: white;
+      padding: 20px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .back-button {
+      background-color: #6c757d;
+    }
+
+    .back-button:hover {
+      background-color: #5a6268;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .info-section {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #007bff;
+    }
+
+    .info-label {
+      font-weight: bold;
+      color: #495057;
+      margin-bottom: 5px;
+    }
+
+    .info-value {
+      font-size: 16px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    .student-header {
+      text-align: center;
+      background-color: #e9ecef;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .student-name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #343a40;
+      margin-bottom: 10px;
+    }
+
+    .student-description {
+      color: #6c757d;
+      font-style: italic;
+    }
+
+    .full-width-section {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #28a745;
+      margin-bottom: 20px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #495057;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 5px;
+    }
+
+    .no-info {
+      color: #6c757d;
+      font-style: italic;
+    }
+
+    .bus-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 15px;
+    }
+
+    .bus-section {
+      background-color: white;
+      padding: 15px;
+      border-radius: 6px;
+      border: 1px solid #dee2e6;
+    }
+
+    .bus-title {
+      font-weight: bold;
+      color: #495057;
+      margin-bottom: 10px;
+    }
+
+    .email-link {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .email-link:hover {
+      text-decoration: underline;
+    }
+
+    .hours-highlight {
+      background-color: #d4edda;
+      color: #155724;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <img src="https://www.pgcps.org/globalassets/offices/newsroom/images/pgcps-logo-in-color-as-png.png" alt="PGCPS" class="pgcps-logo">
+
+    <div class="top-right">
+      <b>Prince George's County Public Schools</b><br>
+      <small>Student Information</small><br>
+      <button class="back-button" onclick="window.location.href='home.html'">Back to Home</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Student Information</h1>
+      <p>Personal Details and Academic Records</p>
+    </div>
+
+    <div class="content">
+      <div class="student-header">
+        <div class="student-name">Bah A. Aidara</div>
+        <div class="student-description">Grade 12 Student • Charles Herbert Flowers High School</div>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-section">
+          <div class="info-label">Student Name</div>
+          <div class="info-value">Bah A. Aidara</div>
+
+          <div class="info-label">Student ID</div>
+          <div class="info-value">100348080</div>
+
+          <div class="info-label">Gender</div>
+          <div class="info-value">Male</div>
+
+          <div class="info-label">Grade</div>
+          <div class="info-value">12</div>
+
+          <div class="info-label">Birth Date</div>
+          <div class="info-value">10/01/2008</div>
+        </div>
+
+        <div class="info-section">
+          <div class="info-label">Home Address</div>
+          <div class="info-value">
+            140 Joyceton Ter<br>
+            Upper Marlboro, MD 20774
+          </div>
+
+          <div class="info-label">Email</div>
+          <div class="info-value">
+            <a href="mailto:bah-aidara@pgcps.org" class="email-link">bah-aidara@pgcps.org</a>
+          </div>
+
+          <div class="info-label">Language To Home</div>
+          <div class="info-value">English</div>
+
+          <div class="info-label">School Name</div>
+          <div class="info-value">CHARLES HERBERT FLOWERS HIGH</div>
+        </div>
+      </div>
+
+      <div class="full-width-section">
+        <div class="section-title">Emergency Contact Information</div>
+        <div class="no-info">No emergency information provided</div>
+      </div>
+
+      <div class="full-width-section">
+        <div class="section-title">Student Locker Information</div>
+        <div class="no-info">No student locker information provided</div>
+      </div>
+
+      <div class="full-width-section">
+        <div class="section-title">Student Service Learning</div>
+        <div class="hours-highlight">Total Hours Completed: 85.00</div>
+      </div>
+
+      <div class="full-width-section">
+        <div class="section-title">Bus Information</div>
+        <div class="bus-grid">
+          <div class="bus-section">
+            <div class="bus-title">Pick Up Information</div>
+            <div class="info-label">Bus Route To School</div>
+            <div class="info-value no-info">Not provided</div>
+            <div class="info-label">Pick Up Transport Time</div>
+            <div class="info-value no-info">Not provided</div>
+            <div class="info-label">Pick Up Bus Stop</div>
+            <div class="info-value no-info">Not provided</div>
+          </div>
+          
+          <div class="bus-section">
+            <div class="bus-title">Drop Off Information</div>
+            <div class="info-label">Bus Route From School</div>
+            <div class="info-value no-info">Not provided</div>
+            <div class="info-label">Drop Off Transport Time</div>
+            <div class="info-value no-info">Not provided</div>
+            <div class="info-label">Drop Off Bus Stop</div>
+            <div class="info-value no-info">Not provided</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #e3f2fd; border-radius: 8px;">
+        <p><em>For any updates to student information, please contact the main office at 301-636-8000.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

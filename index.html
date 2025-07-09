@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudentVUE Account Access</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Swoosh background styles */
+    body::before,
+    body::after {
+      content: "";
+      position: absolute;
+      width: 200%;
+      height: 400px;
+      background: #e0e0e0;
+      z-index: -1;
+      transform: rotate(-8deg);
+      border-radius: 50%;
+    }
+
+    body::before {
+      top: -250px;
+      left: -50%;
+    }
+
+    body::after {
+      bottom: -250px;
+      right: -50%;
+    }
+
+    .header {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .header img {
+      width: 120px;
+    }
+
+    .container {
+      background: white;
+      width: 400px;
+      margin: 30px auto;
+      padding: 30px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 95%;
+      padding: 10px;
+      background-color: #4a4a4a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+      border: 2px solid #007bff;
+    }
+
+    .error {
+      color: red;
+      font-size: 13px;
+      margin-top: 10px;
+      display: none;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: gray;
+      margin-top: 20px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .links {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .links a {
+      display: block;
+      margin: 6px 0;
+      color: #0066cc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="https://www.pgcps.org/globalassets/offices/newsroom/images/pgcps-logo-in-color-as-png.png">
+    <h2>StudentVUE Account Access</h2>
+  </div>
+
+  <div class="container">
+    <h3>Login</h3>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <div id="error" class="error">Invalid username or password.</div>
+
+    <div class="links">
+      <a href="#">Forgot Password</a>
+      <a href="#">iPhone App</a>
+      <a href="#">Android App</a>
+      <a href="#">Mobile App URL</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    Contact your school if you do not have your account details.
+  </div>
+
+  <script>
+    function login() {
+      const u = document.getElementById("username").value;
+      const p = document.getElementById("password").value;
+      const error = document.getElementById("error");
+
+      if (
+        (u === "bah-aidara" && p === "asdf12345") ||
+        (u === "test123" && p === "test123")
+      ) {
+        error.style.display = "none";
+        window.location.href = "home.html";
+      } else {
+        error.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+</html>

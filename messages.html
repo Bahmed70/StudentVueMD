@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messages - StudentVUE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .top-right {
+      text-align: right;
+    }
+
+    .top-right small {
+      color: gray;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #4a4a4a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 10px;
+    }
+
+    button:hover {
+      background-color: #333;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+      border: 2px solid #007bff;
+    }
+
+    .pgcps-logo {
+      height: 40px;
+    }
+
+    .container {
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      background-color: #4a4a4a;
+      color: white;
+      padding: 20px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .back-button {
+      background-color: #6c757d;
+    }
+
+    .back-button:hover {
+      background-color: #5a6268;
+    }
+
+    .inbox-header {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-left: 4px solid #007bff;
+      margin-bottom: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .empty-inbox {
+      text-align: center;
+      padding: 50px;
+      color: #6c757d;
+      font-size: 16px;
+    }
+
+    .empty-inbox img {
+      width: 64px;
+      margin-bottom: 20px;
+      opacity: 0.5;
+    }
+
+    .message-actions {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .action-button {
+      background-color: #007bff;
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+
+    .action-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <img src="https://www.pgcps.org/globalassets/offices/newsroom/images/pgcps-logo-in-color-as-png.png" alt="PGCPS" class="pgcps-logo">
+
+    <div class="top-right">
+      <b>Prince George's County Public Schools</b><br>
+      <small>Good morning, Bah Aidara</small><br>
+      <button class="back-button" onclick="window.location.href='home.html'">Back to Home</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Messages</h1>
+      <p>Student Communication Portal</p>
+    </div>
+
+    <div class="content">
+      <div class="inbox-header">
+        📬 Inbox
+      </div>
+
+      <div class="message-actions">
+        <button class="action-button">Compose</button>
+        <button class="action-button">Refresh</button>
+        <button class="action-button">Archive</button>
+      </div>
+
+      <div class="empty-inbox">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Messages">
+        <h3>Your inbox is empty</h3>
+        <p>You have no new messages at this time.</p>
+        <p>Check back later for updates from your teachers and school administrators.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function logout() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
