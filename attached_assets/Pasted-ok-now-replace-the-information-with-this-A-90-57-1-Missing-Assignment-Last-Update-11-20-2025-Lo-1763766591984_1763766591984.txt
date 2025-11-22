@@ -1,0 +1,185 @@
+ok now replace the information with this :
+
+A
+90.57%
+1 Missing Assignment
+Last Update: 11/20/2025
+Lowest Score: 87%Highest Score: 100%Score History:
+11/11/2025
+90
+11/14/2025
+87
+11/18/2025
+100
+11/20/2025
+100 A Jupyter Notebook in Google Colab
+Python and NumPy for numerical calculations
+Matplotlib for plotting timing results
+Research papers:
+• Khabibouline et al. (Quantum-assisted telescope arrays)
+• Stas et al. (Color-center timing values)
+• Additional papers referenced in task tracking
+The timing Gantt chart from the Khabibouline paper
+Extracted timing values for SiV color centers
+Tracking spreadsheet documenting each step of the project
+
+ 
+
+Karen Shelton  Room: 0804
+
+A
+0 Missing Assignments
+89%
+
+Last Update:
+Lowest Score: 0%
+Highest Score: 0%
+Score History:
+•
+Student Performance
+
+ 
+
+Karen Shelton  Room: 0804
+
+A
+0 Missing Assignments
+94%
+
+Last Update:
+Lowest Score: 0%
+Highest Score: 0%
+Score History:
+•
+Student Performance
+
+ 
+
+FN STAFF_025  Room:
+
+N/A
+0 Missing Assignments
+
+Last Update:
+Lowest Score: 0%
+Highest Score: 0%
+Score History:
+•
+Total Assignments:
+0
+
+ 
+Make each class a button and for each one display these assignments, make the grade no under than 70% randomize them here are the assignment names for AP computer science : QUARTER 2 (11/3/2025 to 1/26/2026)
+QUARTER 2 (11/3/2025 to 1/26/2026)
+Context Module Sub Header
+WEEK 11
+Context Module Sub Header
+Monday, November 03, 2025
+Assignment
+CW251103_Codehs.com_U2L8
+Nov 3
+100 pts
+Assignment
+IA251103_APClassroomU2L8
+Nov 3
+40 pts
+Assignment
+Exam251103_CSA_U1L17-U2L2
+Nov 3
+100 pts
+Assignment
+ClassPartcipation251103
+Nov 3
+10 pts
+Context Module Sub Header
+Wednesday, November 05, 2025
+Assignment
+CW251105_Codehs.com_U2L9
+Nov 5
+100 pts
+Assignment
+IA251105_APClassroomU2L9
+Nov 5
+40 pts
+Context Module Sub Header
+Friday, November 7, 2025
+Assignment
+CW251107_Codehs.com_U2L10
+Nov 7
+100 pts
+Assignment
+IA251107_APClassroomU2L10
+Nov 7
+40 pts
+Assignment
+ClassPartcipation251107
+Nov 7
+10 pts
+Context Module Sub Header
+WEEK 12
+Context Module Sub Header
+Wednesday, November 12, 2025
+Assignment
+WU251112_BooleanExpressions_TruthTables
+Nov 12
+40 pts
+Assignment
+CW251112_Codehs.com_U2L11
+Nov 12
+100 pts
+Assignment
+MkUpQuiz1112_251103_CSA_U1L17-U2L6
+Nov 12
+100 pts
+Assignment
+ClassPartcipation251112
+Nov 12
+10 pts
+Assignment
+IA251112_APClassroomU2L11
+Nov 12
+40 pts
+Context Module Sub Header
+Friday, November 14, 2025
+Assignment
+ClassPartcipation251114
+Nov 12
+10 pts
+Assignment
+CW251114_Codehs.com_U2L12
+Nov 14
+100 pts
+Assignment
+IA251114_APClassroomU2L12
+Nov 14
+40 pts
+Context Module Sub Header
+WEEK 13
+Context Module Sub Header
+Tuesday, November 18, 2025
+Assignment
+Quiz251118_CSA_U2L1-10
+Nov 18
+50 pts
+Assignment
+CW251118_Codehs.com_U3L1
+Nov 18
+100 pts
+Assignment
+IA251118_APClassroomU3L1
+Nov 18
+40 pts
+Assignment
+ClassPartcipation251118
+Nov 18
+10 pts
+Context Module Sub Header
+Thursday, November 20, 2025
+Assignment
+CW251120_Codehs.com_U3L2
+Nov 20
+100 pts
+Assignment
+IA251120_APClassroomU3L2
+Nov 20
+40 pts and for all other classes put the grade as N/A and make the assignments page blank

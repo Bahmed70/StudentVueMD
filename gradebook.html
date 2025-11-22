@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grade Book - StudentVUE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 25px;
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .top-right {
+      text-align: right;
+    }
+
+    .top-right small {
+      color: gray;
+    }
+
+    button {
+      padding: 8px 16px;
+      background-color: #4a4a4a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-left: 10px;
+    }
+
+    button:hover {
+      background-color: #333;
+      box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+      border: 2px solid #007bff;
+    }
+
+    .pgcps-logo {
+      height: 40px;
+    }
+
+    .container {
+      margin: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      background-color: #4a4a4a;
+      color: white;
+      padding: 20px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .course-button {
+      width: 100%;
+      background-color: #f8f9fa;
+      border: 2px solid #dee2e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .course-button:hover {
+      background-color: #e9ecef;
+      border-color: #007bff;
+      box-shadow: 0 2px 8px rgba(0,123,255,0.3);
+    }
+
+    .course-button.active {
+      background-color: #e7f3ff;
+      border-color: #007bff;
+    }
+
+    .course-info {
+      flex-grow: 1;
+    }
+
+    .course-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .course-details {
+      color: #6c757d;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .course-stats {
+      font-size: 13px;
+      color: #495057;
+    }
+
+    .course-grade {
+      font-size: 28px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 6px;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .grade-a {
+      background-color: #28a745;
+      color: white;
+    }
+
+    .grade-na {
+      background-color: #6c757d;
+      color: white;
+    }
+
+    .assignments-container {
+      display: none;
+      margin-top: 15px;
+      padding: 20px;
+      background-color: white;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+    }
+
+    .assignments-container.show {
+      display: block;
+    }
+
+    .assignments-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    .assignments-table th {
+      background-color: #e9ecef;
+      padding: 12px;
+      text-align: left;
+      font-weight: bold;
+      border-bottom: 2px solid #dee2e6;
+    }
+
+    .assignments-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #dee2e6;
+    }
+
+    .assignments-table tr:hover {
+      background-color: #f8f9fa;
+    }
+
+    .week-header {
+      background-color: #007bff;
+      color: white;
+      padding: 8px 12px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .no-assignments {
+      text-align: center;
+      padding: 40px;
+      color: #6c757d;
+      font-style: italic;
+    }
+
+    .score-history {
+      margin-top: 15px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-radius: 4px;
+    }
+
+    .score-history h4 {
+      margin-top: 0;
+      color: #495057;
+    }
+
+    .score-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 5px 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <img src="https://www.pgcps.org/globalassets/offices/newsroom/images/pgcps-logo-in-color-as-png.png" alt="PGCPS" class="pgcps-logo">
+
+    <div class="top-right">
+      <b>Prince George's County Public Schools</b><br>
+      <small>Grade Book</small><br>
+      <button class="back-button" onclick="window.location.href='home.html'">Back to Home</button>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1>Current Grade Book - Bah Aidara</h1>
+      <p>Grade 11 | Marking Period 2 | 2024-2025 School Year</p>
+    </div>
+
+    <div class="content">
+      <!-- AP Computer Science A -->
+      <div class="course-button" onclick="toggleAssignments('cs')">
+        <div class="course-info">
+          <div class="course-title">AP Computer Science A</div>
+          <div class="course-details">Teacher: Karen Shelton | Room: 0804</div>
+          <div class="course-stats">1 Missing Assignment | Last Update: 11/20/2025</div>
+          <div class="course-stats">Lowest Score: 87% | Highest Score: 100%</div>
+        </div>
+        <div class="course-grade grade-a">A<br><span style="font-size: 16px;">90.57%</span></div>
+      </div>
+      
+      <div id="cs-assignments" class="assignments-container">
+        <h3>Score History</h3>
+        <div class="score-history">
+          <div class="score-item">
+            <span>11/11/2025</span>
+            <span><strong>90%</strong></span>
+          </div>
+          <div class="score-item">
+            <span>11/14/2025</span>
+            <span><strong>87%</strong></span>
+          </div>
+          <div class="score-item">
+            <span>11/18/2025</span>
+            <span><strong>100%</strong></span>
+          </div>
+          <div class="score-item">
+            <span>11/20/2025</span>
+            <span><strong>100%</strong></span>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 20px;">Quarter 2 Assignments (11/3/2025 to 1/26/2026)</h3>
+        
+        <div class="week-header">WEEK 11</div>
+        <table class="assignments-table">
+          <thead>
+            <tr>
+              <th>Assignment</th>
+              <th>Due Date</th>
+              <th>Points</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CW251103_Codehs.com_U2L8</td>
+              <td>Nov 3, 2025</td>
+              <td>100</td>
+              <td>95/100 (95%)</td>
+            </tr>
+            <tr>
+              <td>IA251103_APClassroomU2L8</td>
+              <td>Nov 3, 2025</td>
+              <td>40</td>
+              <td>38/40 (95%)</td>
+            </tr>
+            <tr>
+              <td>Exam251103_CSA_U1L17-U2L2</td>
+              <td>Nov 3, 2025</td>
+              <td>100</td>
+              <td>87/100 (87%)</td>
+            </tr>
+            <tr>
+              <td>ClassPartcipation251103</td>
+              <td>Nov 3, 2025</td>
+              <td>10</td>
+              <td>10/10 (100%)</td>
+            </tr>
+            <tr>
+              <td>CW251105_Codehs.com_U2L9</td>
+              <td>Nov 5, 2025</td>
+              <td>100</td>
+              <td>92/100 (92%)</td>
+            </tr>
+            <tr>
+              <td>IA251105_APClassroomU2L9</td>
+              <td>Nov 5, 2025</td>
+              <td>40</td>
+              <td>36/40 (90%)</td>
+            </tr>
+            <tr>
+              <td>CW251107_Codehs.com_U2L10</td>
+              <td>Nov 7, 2025</td>
+              <td>100</td>
+              <td>88/100 (88%)</td>
+            </tr>
+            <tr>
+              <td>IA251107_APClassroomU2L10</td>
+              <td>Nov 7, 2025</td>
+              <td>40</td>
+              <td>35/40 (87.5%)</td>
+            </tr>
+            <tr>
+              <td>ClassPartcipation251107</td>
+              <td>Nov 7, 2025</td>
+              <td>10</td>
+              <td>10/10 (100%)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="week-header">WEEK 12</div>
+        <table class="assignments-table">
+          <tbody>
+            <tr>
+              <td>WU251112_BooleanExpressions_TruthTables</td>
+              <td>Nov 12, 2025</td>
+              <td>40</td>
+              <td>38/40 (95%)</td>
+            </tr>
+            <tr>
+              <td>CW251112_Codehs.com_U2L11</td>
+              <td>Nov 12, 2025</td>
+              <td>100</td>
+              <td>94/100 (94%)</td>
+            </tr>
+            <tr>
+              <td>MkUpQuiz1112_251103_CSA_U1L17-U2L6</td>
+              <td>Nov 12, 2025</td>
+              <td>100</td>
+              <td>0/100 (0%) - MISSING</td>
+            </tr>
+            <tr>
+              <td>ClassPartcipation251112</td>
+              <td>Nov 12, 2025</td>
+              <td>10</td>
+              <td>10/10 (100%)</td>
+            </tr>
+            <tr>
+              <td>IA251112_APClassroomU2L11</td>
+              <td>Nov 12, 2025</td>
+              <td>40</td>
+              <td>37/40 (92.5%)</td>
+            </tr>
+            <tr>
+              <td>ClassPartcipation251114</td>
+              <td>Nov 14, 2025</td>
+              <td>10</td>
+              <td>10/10 (100%)</td>
+            </tr>
+            <tr>
+              <td>CW251114_Codehs.com_U2L12</td>
+              <td>Nov 14, 2025</td>
+              <td>100</td>
+              <td>91/100 (91%)</td>
+            </tr>
+            <tr>
+              <td>IA251114_APClassroomU2L12</td>
+              <td>Nov 14, 2025</td>
+              <td>40</td>
+              <td>36/40 (90%)</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="week-header">WEEK 13</div>
+        <table class="assignments-table">
+          <tbody>
+            <tr>
+              <td>Quiz251118_CSA_U2L1-10</td>
+              <td>Nov 18, 2025</td>
+              <td>50</td>
+              <td>50/50 (100%)</td>
+            </tr>
+            <tr>
+              <td>CW251118_Codehs.com_U3L1</td>
+              <td>Nov 18, 2025</td>
+              <td>100</td>
+              <td>97/100 (97%)</td>
+            </tr>
+            <tr>
+              <td>IA251118_APClassroomU3L1</td>
+              <td>Nov 18, 2025</td>
+              <td>40</td>
+              <td>39/40 (97.5%)</td>
+            </tr>
+            <tr>
+              <td>ClassPartcipation251118</td>
+              <td>Nov 18, 2025</td>
+              <td>10</td>
+              <td>10/10 (100%)</td>
+            </tr>
+            <tr>
+              <td>CW251120_Codehs.com_U3L2</td>
+              <td>Nov 20, 2025</td>
+              <td>100</td>
+              <td>100/100 (100%)</td>
+            </tr>
+            <tr>
+              <td>IA251120_APClassroomU3L2</td>
+              <td>Nov 20, 2025</td>
+              <td>40</td>
+              <td>40/40 (100%)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Other Courses with N/A grades -->
+      <div class="course-button" onclick="toggleAssignments('english')">
+        <div class="course-info">
+          <div class="course-title">Researchphy science</div>
+          <div class="course-details">Teacher: Karen Shelton | Room: 0804</div>
+          <div class="course-stats">0 Missing Assignments | Last Update: --</div>
+          <div class="course-stats">Lowest Score: 0% | Highest Score: 0%</div>
+        </div>
+        <div class="course-grade grade-a">A<br><span style="font-size: 16px;">89%</span></div>
+      </div>
+      
+      <div id="english-assignments" class="assignments-container">
+        <div class="no-assignments">No assignments to display</div>
+      </div>
+
+      <div class="course-button" onclick="toggleAssignments('precalc')">
+        <div class="course-info">
+          <div class="course-title">Internship 2 - S/T</div>
+          <div class="course-details">Teacher: Karen Shelton | Room: 0804</div>
+          <div class="course-stats">0 Missing Assignments | Last Update: --</div>
+          <div class="course-stats">Lowest Score: 0% | Highest Score: 0%</div>
+        </div>
+        <div class="course-grade grade-a">A<br><span style="font-size: 16px;">94%</span></div>
+      </div>
+      
+      <div id="precalc-assignments" class="assignments-container">
+        <div class="no-assignments">No assignments to display</div>
+      </div>
+
+      <div class="course-button" onclick="toggleAssignments('other')">
+        <div class="course-info">
+          <div class="course-title">Precalculus Part 1 DE</div>
+          <div class="course-details">Teacher: FN STAFF_025 | Room: --</div>
+          <div class="course-stats">0 Missing Assignments | Last Update: --</div>
+          <div class="course-stats">Lowest Score: 0% | Highest Score: 0%</div>
+        </div>
+        <div class="course-grade grade-na">N/A</div>
+      </div>
+      
+      <div id="other-assignments" class="assignments-container">
+        <div class="no-assignments">No assignments to display</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleAssignments(courseId) {
+      const assignmentsDiv = document.getElementById(courseId + '-assignments');
+      const courseButton = event.currentTarget;
+      
+      // Close all other assignments
+      const allAssignments = document.querySelectorAll('.assignments-container');
+      const allButtons = document.querySelectorAll('.course-button');
+      
+      allAssignments.forEach(div => {
+        if (div.id !== courseId + '-assignments') {
+          div.classList.remove('show');
+        }
+      });
+      
+      allButtons.forEach(btn => {
+        if (btn !== courseButton) {
+          btn.classList.remove('active');
+        }
+      });
+      
+      // Toggle current assignment
+      assignmentsDiv.classList.toggle('show');
+      courseButton.classList.toggle('active');
+    }
+
+    function logout() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
